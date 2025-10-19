@@ -3,6 +3,32 @@
     padding: 0;
     box-sizing: border-box;
 }
+#busqueda {
+    max-width: 600px;
+    margin: 40px auto 20px;
+    text-align: center;
+}
+
+#search-input {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    border: 2px solid rgba(233, 69, 96, 0.3);
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    transition: border 0.3s ease;
+}
+
+#search-input::placeholder {
+    color: #bbb;
+}
+
+#search-input:focus {
+    outline: none;
+    border-color: #e94560;
+}
+
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

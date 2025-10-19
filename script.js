@@ -1,8 +1,12 @@
+// Guardar todos los datos cargados
+let allData = [];
+
 // Cargar datos desde el JSON
 async function loadData() {
     try {
         const response = await fetch('data.json');
         const data = await response.json();
+        allData = data;
         return data;
     } catch (error) {
         console.error('Error al cargar los datos:', error);
@@ -11,10 +15,8 @@ async function loadData() {
 }
 
 // Cargar contenido destacado en Novedades
-async function loadFeaturedContent() {
-    const data = await loadData();
-    const featured = data.find(item => item.title === "Parasite");
-
+function loadFeaturedContent() {
+    const featured = allData.find(item => item.title === "Parasite");
     if (featured) {
         document.getElementById('featured-poster').src = featured.poster;
         document.getElementById('featured-title').textContent = featured.title;
@@ -22,31 +24,55 @@ async function loadFeaturedContent() {
     }
 }
 
-// Cargar películas en Tendencias (sin limitar)
-async function loadTendencias() {
-    const data = await loadData();
-    const movies = data.filter(item => item.movie); // Quitamos el .slice(0, 8)
+// Renderizar películas en Tendencias (máximo 3)
+function renderTendencias(movies) {
     const grid = document.getElementById('tendencias-grid');
-    
-    movies.forEach(movie => {
-        const card = createCard(movie);
+    grid.innerHTML = '';
+
+    movies.slice(0, 3).forEach((movie, index) => {
+        const card = document.createElement('div');
+        card.className = 'card';
+
+        card.innerHTML = `
+            <img src="${movie.poster}" alt="${movie.title}">
+            <div class="card-info">
+                <h4>#${index + 1} - ${movie.title}</h4>
+                <p>${movie.description}</p>
+                <div class="card-meta">
+                    <span>${movie.year}</span>
+                    <span>${movie.duration} min</span>
+                </div>
+                <button onclick="window.open('${movie.trailer}', '_blank')" class="submit-btn" style="margin-top: 1rem;">Ver Trailer</button>
+            </div>
+        `;
+
         grid.appendChild(card);
     });
 }
 
-// Cargar series
-async function loadSeries() {
-    const data = await loadData();
-    const series = data.filter(item => !item.movie);
+// Renderizar series
+function renderSeries(series) {
     const grid = document.getElementById('series-grid');
-    
+    grid.innerHTML = '';
+
     series.forEach(serie => {
         const card = createCard(serie);
         grid.appendChild(card);
     });
 }
 
-// Crear tarjeta de película/serie
+// Filtrar y renderizar según término de búsqueda
+function filterAndRender(searchTerm = "") {
+    const term = searchTerm.toLowerCase();
+
+    const filteredMovies = allData.filter(item => item.movie && item.title.toLowerCase().includes(term));
+    const filteredSeries = allData.filter(item => !item.movie && item.title.toLowerCase().includes(term));
+
+    renderTendencias(filteredMovies);
+    renderSeries(filteredSeries);
+}
+
+// Crear tarjeta (card) genérica
 function createCard(item) {
     const card = document.createElement('div');
     card.className = 'card';
@@ -70,15 +96,28 @@ function toggleMenu() {
     menu.classList.toggle('active');
 }
 
-// Manejar envío de formulario
+// Manejar envío del formulario
 function handleSubmit(e) {
     e.preventDefault();
     alert('¡Gracias por tu mensaje! Te contactaremos pronto.');
     e.target.reset();
 }
 
-// Scroll suave para los enlaces
-document.addEventListener('DOMContentLoaded', () => {
+// Scroll suave y eventos
+document.addEventListener('DOMContentLoaded', async () => {
+    await loadData();
+    loadFeaturedContent();
+    filterAndRender(); // Mostrar contenido inicial
+
+    // Búsqueda dinámica
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+            filterAndRender(e.target.value);
+        });
+    }
+
+    // Scroll suave para anclas
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -90,9 +129,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-
-    // Cargar contenido
-    loadFeaturedContent();
-    loadTendencias();
-    loadSeries();
 });
