@@ -3,10 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-#busqueda {
+/* Estilos específicos para la sección de búsqueda */
+.search-section {
+    min-height: auto; /* Evita ocupar toda la pantalla */
+    padding: 40px 5% 10px;
     max-width: 600px;
-    margin: 40px auto 20px;
+    margin: 0 auto;
     text-align: center;
+}
+
+.search-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 #search-input {
