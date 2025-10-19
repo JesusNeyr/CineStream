@@ -14,7 +14,7 @@ async function loadData() {
 async function loadFeaturedContent() {
     const data = await loadData();
     const featured = data.find(item => item.title === "Parasite");
-    
+
     if (featured) {
         document.getElementById('featured-poster').src = featured.poster;
         document.getElementById('featured-title').textContent = featured.title;
@@ -22,10 +22,10 @@ async function loadFeaturedContent() {
     }
 }
 
-// Cargar películas en Tendencias
+// Cargar películas en Tendencias (sin limitar)
 async function loadTendencias() {
     const data = await loadData();
-    const movies = data.filter(item => item.movie).slice(0, 8);
+    const movies = data.filter(item => item.movie); // Quitamos el .slice(0, 8)
     const grid = document.getElementById('tendencias-grid');
     
     movies.forEach(movie => {
@@ -84,15 +84,14 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
             target.scrollIntoView({ behavior: 'smooth' });
-            
-            // Cerrar menú móvil después de hacer clic
+
             if (window.innerWidth <= 768) {
                 document.getElementById('menu').classList.remove('active');
             }
         });
     });
 
-    // Cargar todo el contenido
+    // Cargar contenido
     loadFeaturedContent();
     loadTendencias();
     loadSeries();
