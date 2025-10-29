@@ -14,7 +14,7 @@ async function loadData() {
     }
 }
 
-// Cargar contenido destacado en Novedades
+
 function loadFeaturedContent() {
     const featured = allData.find(item => item.title === "Parasite");
     if (featured) {
@@ -24,7 +24,7 @@ function loadFeaturedContent() {
     }
 }
 
-// Renderizar películas en Tendencias (máximo 3)
+
 function renderTendencias(movies) {
     const grid = document.getElementById('tendencias-grid');
     grid.innerHTML = '';
@@ -32,7 +32,7 @@ function renderTendencias(movies) {
     movies.slice(0, 3).forEach((movie, index) => {
         const card = document.createElement('div');
         card.className = 'card';
-
+        
         card.innerHTML = `
             <img src="${movie.poster}" alt="${movie.title}">
             <div class="card-info">
@@ -50,7 +50,7 @@ function renderTendencias(movies) {
     });
 }
 
-// Renderizar series
+
 function renderSeries(series) {
     const grid = document.getElementById('series-grid');
     grid.innerHTML = '';
@@ -61,7 +61,6 @@ function renderSeries(series) {
     });
 }
 
-// Filtrar y renderizar según término de búsqueda
 function filterAndRender(searchTerm = "") {
     const term = searchTerm.toLowerCase();
 
@@ -72,7 +71,6 @@ function filterAndRender(searchTerm = "") {
     renderSeries(filteredSeries);
 }
 
-// Crear tarjeta (card) genérica
 function createCard(item) {
     const card = document.createElement('div');
     card.className = 'card';
@@ -84,32 +82,32 @@ function createCard(item) {
             <div class="card-meta">
                 <span>${item.year}</span>
                 <span>${item.duration} min</span>
-            </div>
+                </div>
+            <button onclick="window.open('${item.trailer}', '_blank')" class="submit-btn" style="margin-top: 1rem;">Ver Trailer</button>
         </div>
     `;
     return card;
 }
 
-// Toggle menú móvil
 function toggleMenu() {
     const menu = document.getElementById('menu');
     menu.classList.toggle('active');
 }
 
-// Manejar envío del formulario
+
 function handleSubmit(e) {
     e.preventDefault();
     alert('¡Gracias por tu mensaje! Te contactaremos pronto.');
     e.target.reset();
 }
 
-// Scroll suave y eventos
+
 document.addEventListener('DOMContentLoaded', async () => {
     await loadData();
     loadFeaturedContent();
-    filterAndRender(); // Mostrar contenido inicial
+    filterAndRender(); 
 
-    // Búsqueda dinámica
+   
     const searchInput = document.getElementById('search-input');
     if (searchInput) {
         searchInput.addEventListener('input', (e) => {
@@ -117,7 +115,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
     }
 
-    // Scroll suave para anclas
+   
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();

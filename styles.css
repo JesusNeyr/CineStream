@@ -3,9 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* Estilos específicos para la sección de búsqueda */
+
 .search-section {
-    min-height: auto; /* Evita ocupar toda la pantalla */
+    min-height: auto; 
     padding: 40px 5% 10px;
     max-width: 600px;
     margin: 0 auto;
@@ -45,7 +45,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Header */
 header {
     position: fixed;
     top: 0;
@@ -117,7 +116,7 @@ nav {
     transition: 0.3s;
 }
 
-/* Sections */
+
 section {
     min-height: 100vh;
     padding: 100px 5% 50px;
@@ -134,7 +133,7 @@ h2 {
     background-clip: text;
 }
 
-/* Novedades Section */
+
 .novedades-content {
     display: flex;
     gap: 3rem;
@@ -191,7 +190,7 @@ h2 {
     font-size: 0.9rem;
 }
 
-/* Tendencias Section */
+
 .tendencias-grid {
     display: flex;
     flex-wrap: wrap;
@@ -247,7 +246,7 @@ h2 {
     color: #888;
 }
 
-/* Series Section */
+
 .series-grid {
     display: flex;
     flex-wrap: wrap;
@@ -255,7 +254,7 @@ h2 {
     justify-content: center;
 }
 
-/* Contacto Section */
+
 .contacto-content {
     max-width: 600px;
     margin: 0 auto;
@@ -311,7 +310,7 @@ h2 {
     transform: scale(1.05);
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
     .menu {
         position: fixed;

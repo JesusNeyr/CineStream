@@ -6,7 +6,8 @@
     "duration": 148,
     "poster": "https://filmartgallery.com/cdn/shop/files/Inception-Vintage-Movie-Poster-Original.jpg?height=1024&v=1738912645&width=1024",
     "genre": "Science Fiction",
-    "movie": true
+    "movie": true,
+    "trailer":"https://youtu.be/YoHD9XEInc0"
   },
   {
     "title": "The Godfather",
@@ -15,6 +16,7 @@
     "duration": 175,
     "poster": "//filmartgallery.com/cdn/shop/files/The-Godfather-Vintage-Movie-Poster-Original_8ae05b73.jpg?height=1024&v=1757559723&width=1024",
     "genre": "Crime",
+    "trailer":"https://www.youtube.com/watch?v=pA3_JYkhqDM",
     "movie": true
   },
   {
@@ -24,6 +26,7 @@
     "duration": 195,
     "poster": "//filmartgallery.com/cdn/shop/products/Titanic-Vintage-Movie-Poster-Original.jpg?height=1024&v=1738379076&width=1024",
     "genre": "Romance",
+    "trailer":"https://www.youtube.com/watch?v=1EMkCJWQIDY",
     "movie": true
   },
   {
@@ -33,6 +36,7 @@
     "duration": 152,
     "poster": "//filmartgallery.com/cdn/shop/products/The-Dark-Knight-Vintage-Movie-Poster-Original_030ba65a.jpg?height=1024&v=1741717610&width=1024",
     "genre": "Action",
+    "trailer":"https://www.youtube.com/watch?v=kj7urtvmwrY",
     "movie": true
   },
   {
@@ -42,6 +46,7 @@
     "duration": 154,
     "poster": "//filmartgallery.com/cdn/shop/files/Pulp-Fiction-Vintage-Movie-Poster-Original_cae3542f.jpg?height=1024&v=1743651808&width=1024",
     "genre": "Crime",
+    "trailer":"https://www.youtube.com/watch?v=r-PSxjTR174",
     "movie": true
   },
   {
@@ -51,6 +56,7 @@
     "duration": 142,
     "poster": "//filmartgallery.com/cdn/shop/files/Forrest-Gump-Vintage-Movie-Poster-Original_cff0d5fa.jpg?height=1024&v=1745550388&width=1024",
     "genre": "Drama",
+    "trailer":"https://www.youtube.com/watch?v=Cyh1LpxnaxI",
     "movie": true
   },
   {
@@ -60,6 +66,7 @@
     "duration": 136,
     "poster": "https://m.media-amazon.com/images/I/51EG732BV3L._AC_.jpg",
     "genre": "Science Fiction",
+    "trailer":"https://www.youtube.com/watch?v=Pl_H2Lmjn6k",
     "movie": true
   },
   {
@@ -69,6 +76,7 @@
     "duration": 155,
     "poster": "//filmartgallery.com/cdn/shop/files/Gladiator-Vintage-Movie-Poster-Original.jpg?height=1024&v=1738906837&width=1024",
     "genre": "Historical",
+    "trailer":"https://www.youtube.com/watch?v=lsDdsvKVbMo",
     "movie": true
   },
   {
@@ -78,6 +86,7 @@
     "duration": 142,
     "poster": "//filmartgallery.com/cdn/shop/files/The-Shawshank-Redemption-Vintage-Movie-Poster-Original_a115e752.jpg?height=1024&v=1753412939&width=1024",
     "genre": "Drama",
+    "trailer":"https://www.youtube.com/watch?v=_znb1cUiQP8",
     "movie": true
   },
   {
@@ -87,6 +96,7 @@
     "duration": 127,
     "poster": "//filmartgallery.com/cdn/shop/files/Jurassic-Park-Vintage-Movie-Poster-Original_0a603b54.jpg?height=1024&v=1752721932&width=1024",
     "genre": "Adventure",
+    "trailer":"https://www.youtube.com/watch?v=dLDkNge_AhE",
     "movie": true
   },
   {
@@ -96,6 +106,7 @@
     "duration": 162,
     "poster": "//filmartgallery.com/cdn/shop/files/Avatar-Vintage-Movie-Poster-Original_39aff406.jpg?height=1024&v=1749589696&width=1024",
     "genre": "Science Fiction",
+    "trailer":"https://www.youtube.com/watch?v=g5deg0HgCmY",
     "movie": true
   },
   {
@@ -105,6 +116,7 @@
     "duration": 88,
     "poster": "//filmartgallery.com/cdn/shop/files/The-Lion-King-Vintage-Movie-Poster-Original.jpg?height=1024&v=1738906787&width=1024",
     "genre": "Animation",
+    "trailer":"https://www.youtube.com/watch?v=h-As2lUk6IA",
     "movie": true
   },
   {
@@ -114,6 +126,7 @@
     "duration": 169,
     "poster": "//filmartgallery.com/cdn/shop/files/Interstellar-Vintage-Movie-Poster-Original_ab1cfab0.jpg?height=1024&v=1741773994&width=1024",
     "genre": "Science Fiction",
+    "trailer":"https://www.youtube.com/watch?v=LYS2O1nl9iM",
     "movie": true
   },
   {
@@ -123,6 +136,7 @@
     "duration": 143,
     "poster": "//filmartgallery.com/cdn/shop/files/Avengers-Endgame-Official-Movie-Poster-Vintage-Movie-Poster-Original_c013767b.jpg?height=1024&v=1759288126&width=1024",
     "genre": "Action",
+    "trailer":"https://www.youtube.com/watch?v=3xk11d9hjp0",
     "movie": true
   },
   {
@@ -132,6 +146,7 @@
     "duration": 128,
     "poster": "//filmartgallery.com/cdn/shop/files/La-La-Land-Vintage-Movie-Poster-Original_ddf53821.jpg?height=1024&v=1755129164&width=1024",
     "genre": "Musical",
+    "trailer":"https://www.youtube.com/watch?v=KtqSUk0kwJs&list=RDKtqSUk0kwJs&start_radio=1",
     "movie": true
   },
   {
@@ -141,6 +156,7 @@
     "duration": 132,
     "poster": "//filmartgallery.com/cdn/shop/files/Parasite-Vintage-Movie-Poster-Original_b97b1ea1.jpg?height=1024&v=1755054244&width=1024",
     "genre": "Thriller",
+    "trailer":"https://www.youtube.com/watch?v=90dWVETAdtI",
     "movie": true
   },
 
@@ -151,6 +167,7 @@
     "duration": 120,
     "poster": "//filmartgallery.com/cdn/shop/files/Mad-Max-Fury-Road-Vintage-Movie-Poster-Original.jpg?height=1024&v=1738911989&width=1024",
     "genre": "Action",
+    "trailer":"https://www.youtube.com/watch?v=qtSDD5m88PI",
     "movie": true
   },
   {
@@ -160,6 +177,7 @@
     "duration": 47,
     "poster": "https://m.media-amazon.com/images/M/MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_FMjpg_UY480_.jpg 320w, https://m.media-amazon.com/images/M/MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_FMjpg_UY720_.jpg 480w, https://m.media-amazon.com/images/M/MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_FMjpg_UY337_.jpg 224w, https://m.media-amazon.com/images/M/MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_FMjpg_UY576_.jpg 384w, https://m.media-amazon.com/images/M/MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_FMjpg_UY720_.jpg 480w, https://m.media-amazon.com/images/M/MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_FMjpg_UY3000_.jpg 2000w",
     "genre": "Crime",
+    "trailer":"https://www.youtube.com/watch?v=mXd1zTwcQ18",
     "movie": false
   },
   {
@@ -169,6 +187,7 @@
     "duration": 57,
     "poster": "https://m.media-amazon.com/images/M/MV5BMTU2OTg0NTU1M15BMl5BanBnXkFtZTgwMzU1MjMxODE@._V1_.jpg",
     "genre": "Fantasy",
+    "trailer":"https://www.youtube.com/watch?v=IznyEBoUcuk",
     "movie": false
   },
   {
@@ -178,6 +197,7 @@
     "duration": 50,
     "poster": "https://m.media-amazon.com/images/M/MV5BMjg2NmM0MTEtYWY2Yy00NmFlLTllNTMtMjVkZjEwMGVlNzdjXkEyXkFqcGc@._V1_.jpg",
     "genre": "Science Fiction",
+    "trailer":"https://www.youtube.com/watch?v=Wre1F5YyIlA",
     "movie": false
   },
   {
@@ -187,6 +207,7 @@
     "duration": 58,
     "poster": "https://m.media-amazon.com/images/M/MV5BMGU2MjdjODQtZDk5Ny00NzgwLWI2MTMtYzViNDU5MDNjMGU2XkEyXkFqcGc@._V1_.jpg",
     "genre": "Historical Drama",
+    "trailer":"https://www.youtube.com/watch?v=P8FoI-OfovI",
     "movie": false
   },
   {
@@ -196,6 +217,7 @@
     "duration": 60,
     "poster": "https://m.media-amazon.com/images/M/MV5BZmIwMTNiNjYtZWY2MS00MDg5LWEyODQtZDQ0MzU4MzM2M2M3XkEyXkFqcGc@._V1_.jpg",
     "genre": "Science Fiction",
+    "trailer":"https://www.youtube.com/watch?v=sey1O3-PJjY",
     "movie": false
   },
   {
@@ -205,6 +227,7 @@
     "duration": 90,
     "poster": "https://m.media-amazon.com/images/M/MV5BNTQzNGZjNDEtOTMwYi00MzFjLWE2ZTYtYzYxYzMwMjZkZDc5XkEyXkFqcGc@._V1_.jpg",
     "genre": "Crime",
+    "trailer":"https://www.youtube.com/watch?v=rof9ssxL3TI",
     "movie": false
   },
   {
@@ -214,6 +237,7 @@
     "duration": 35,
     "poster": "https://m.media-amazon.com/images/M/MV5BNjgxZGM0OWUtZGY1MS00MWRmLTk2N2ItYjQyZTI1OThlZDliXkEyXkFqcGc@._V1_.jpg",
     "genre": "Action",
+    "trailer":"https://www.youtube.com/watch?v=DyA6S4PQkW8",
     "movie": false
   },
   {
@@ -223,6 +247,7 @@
     "duration": 60,
     "poster": "https://m.media-amazon.com/images/M/MV5BOTkyODJlZTEtMDc3YS00ZjE3LWI1ZjItZGI1MzUzNDZiM2YyXkEyXkFqcGc@._V1_.jpg",
     "genre": "Science Fiction",
+    "trailer":"https://www.youtube.com/watch?v=qFPK5ISGOSw",
     "movie": false
   },
   {
@@ -232,6 +257,7 @@
     "duration": 22,
     "poster": "https://m.media-amazon.com/images/M/MV5BOTExYTkwZDgtZmRkZi00YmNhLWEwZDQtMTM5ZDMxNzFiODU4XkEyXkFqcGc@._V1_.jpg",
     "genre": "Comedy",
+    "trailer":"https://www.youtube.com/watch?v=vyq1FCeFrng",
     "movie": false
   },
   {
@@ -241,6 +267,7 @@
     "duration": 49,
     "poster": "https://m.media-amazon.com/images/M/MV5BZTc0NTY1Y2YtODlkMi00ZGM0LTk3NzItOTRmNTZkYzE3YTQwXkEyXkFqcGc@._V1_.jpg",
     "genre": "Crime",
+    "trailer":"https://youtu.be/xl8zdCY-abw",
     "movie": false
   }
 ]
