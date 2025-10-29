@@ -16,12 +16,15 @@ async function loadData() {
 
 
 function loadFeaturedContent() {
-    const featured = allData.find(item => item.title === "Parasite");
+    const randomIndex= Math.floor(Math.random()*allData.length)
+    const featured = allData[randomIndex];
     if (featured) {
         document.getElementById('featured-poster').src = featured.poster;
         document.getElementById('featured-title').textContent = featured.title;
         document.getElementById('featured-description').textContent = featured.description;
-    }
+        const trailerBtn= document.getElementById('trailer-novedades');
+        trailerBtn.onclick=()=>window.open(featured.trailer,'_blank')
+            }
 }
 
 
